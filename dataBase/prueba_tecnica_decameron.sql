@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-02-2019 a las 23:32:28
+-- Tiempo de generación: 21-02-2019 a las 23:56:41
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.0
 
@@ -41,7 +41,7 @@ INSERT INTO `acomodacion_hab` (`id`, `nombre`) VALUES
 (1, 'Sencilla'),
 (2, 'Doble'),
 (3, 'Triple'),
-(4, 'Cuádruple');
+(4, 'Cuadruple');
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,17 @@ INSERT INTO `habitacion` (`id`, `tipo_id`, `acomodacion_id`, `hotel_id`) VALUES
 (23, 3, 1, 2),
 (26, 3, 1, 1),
 (27, 3, 3, 1),
-(28, 3, 3, 1);
+(28, 3, 3, 1),
+(42, 1, 2, 2),
+(43, 1, 2, 2),
+(44, 1, 2, 2),
+(45, 1, 2, 2),
+(46, 1, 2, 2),
+(47, 1, 2, 2),
+(48, 1, 2, 2),
+(49, 1, 2, 2),
+(50, 1, 2, 2),
+(51, 1, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -106,7 +116,7 @@ CREATE TABLE `hotel` (
 
 INSERT INTO `hotel` (`id`, `nombre`, `ciudad`, `direccion`, `nit`, `nro_habitaciones`) VALUES
 (1, 'Decameron Cartagena', 'Cartagena', 'calle 23 58-25', '12345678-9', 42),
-(2, 'Decameron Bogotá', 'Bogotá', 'calle 105 25-48', '98765432-1', 30),
+(2, 'Decameron Bogota', 'Bogota', 'calle 105 25-48', '98765432-1', 30),
 (3, 'Decameron Santander', 'Santander', 'calle 25 15-34', '14725836-9', 36);
 
 -- --------------------------------------------------------
@@ -125,7 +135,7 @@ CREATE TABLE `tipo_hab` (
 --
 
 INSERT INTO `tipo_hab` (`id`, `nombre`) VALUES
-(1, 'Estándar'),
+(1, 'Estandar'),
 (2, 'Junior'),
 (3, 'Suite');
 
@@ -171,7 +181,7 @@ ALTER TABLE `acomodacion_hab`
 -- AUTO_INCREMENT de la tabla `habitacion`
 --
 ALTER TABLE `habitacion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT de la tabla `hotel`
